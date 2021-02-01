@@ -5,7 +5,6 @@ import NavItem from "./navItem";
 const NavBar = () => {
     return (
         <Navigation>
-            <h1>LOGO KÁMO</h1>
             <ul>
                 <NavItem Item={"About"}/>
                 <NavItem Item={"Contact"}/>
@@ -15,9 +14,14 @@ const NavBar = () => {
     )
 }
 
+
 const Navigation = styled.div`
   display: flex;
-  justify-content: space-between;
+  position: absolute;
+  justify-content: flex-end;
   width: 100%;
+  padding: 30px 30px 0 0;
 `
+
+
 export default NavBar
