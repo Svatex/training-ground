@@ -1,17 +1,34 @@
 import styled from 'styled-components'
 import NavBar from "../componenets/navBar";
-import RightBar from "../componenets/rightBar";
+import RightColumn from "../componenets/rightColumn";
+import LeftColumn from "../componenets/leftColumn";
+import Theme from "../componenets/theme";
+import {useState} from 'react'
 
 
 export default function Home() {
+    const [Light, setLight] = useState(false)
+    console.log(Light)
+
+    const changeTheme = () => {
+        setLight(!Light)
+    };
+
+
     return (
-        <Wrapper>
-            <NavBar/>
-            <LeftBar/>
-            <RightBar/>
-        </Wrapper>
+        <Theme>
+            <Wrapper>
+                <NavBar/>
+                <LeftColumn themeSetting={Light} changeTheme={changeTheme}/>
+                <RightColumn/>
+            </Wrapper>
+        </Theme>
+
+
     );
 }
+
+
 const Wrapper = styled.div`
   display: flex;
   margin: 0px auto;
@@ -20,9 +37,3 @@ const Wrapper = styled.div`
   position: relative;
 `
 
-const LeftBar = styled.div`
-  background-color: #060300;
-  width: 20%;
-  height: 100%;
-  overflow: hidden;
-`

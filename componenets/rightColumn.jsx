@@ -3,7 +3,7 @@ import ImgGallery from "./imgGallery";
 import BottomBar from "./bottomBar";
 
 
-const RightBar = () => {
+const RightColumn = () => {
     return (
         <>
         <RightWrapper>
@@ -18,7 +18,7 @@ const RightBar = () => {
 const RightWrapper = styled.div`
   width: 80%;
   height: 100%;
-  background-color: rgba(8,3,3,0.95);
+  background-color: ${props => props.theme.color.dark };
 `
 
-export default RightBar
+export default RightColumn
