@@ -3,12 +3,12 @@ import ImgGallery from "./imgGallery";
 import BottomBar from "./bottomBar";
 
 
-const RightColumn = () => {
+const RightColumn = ({themeSetting}) => {
     return (
         <>
         <RightWrapper>
             <ImgGallery/>
-            <BottomBar/>
+            <BottomBar themeSetting={themeSetting}/>
         </RightWrapper>
         </>
 

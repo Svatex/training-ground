@@ -20,7 +20,7 @@ export default function Home() {
             <Wrapper>
                 <NavBar/>
                 <LeftColumn themeSetting={Light} changeTheme={changeTheme}/>
-                <RightColumn/>
+                <RightColumn themeSetting={Light}/>
             </Wrapper>
         </Theme>
 

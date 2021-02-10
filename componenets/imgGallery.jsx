@@ -13,6 +13,7 @@ const ImgGallery = () => {
 }
 
 const ImgWrapper = styled.div`
+    height: 70%;
 
 `
 

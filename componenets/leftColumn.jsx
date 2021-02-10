@@ -17,7 +17,7 @@ const LeftColumn = ({changeTheme, themeSetting}) => {
 
 const LeftBar = styled.div`
   background-color: ${(props) => (props.mode ? props.theme.color.dark : props.theme.color.light)};
-  width: 20%;
+  width: 25%;
   height: 100%;
   overflow: hidden;
 `

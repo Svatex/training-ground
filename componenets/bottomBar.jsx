@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 
-const BottomBar = () => {
+const BottomBar = ({themeSetting}) => {
     return (
         <>
-            <BottomWrapper>
+            <BottomWrapper mode={themeSetting}>
 
             </BottomWrapper>
         </>
@@ -13,7 +13,8 @@ const BottomBar = () => {
 }
 
 const BottomWrapper = styled.div`
-
+    height: 30%;
+  background-color: ${(props) => (props.mode ? props.theme.color.dark : props.theme.color.light)};
 `
 
 export default BottomBar
