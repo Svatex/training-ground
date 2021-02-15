@@ -6,7 +6,7 @@ const NavBar = () => {
     return (
         <Navigation>
             <ul>
-                <NavItem Item={"About"}/>
+                <NavItem Item={"Abou"}/>
                 <NavItem Item={"Contact"}/>
                 <NavItem Item={"Relive"}/>
             </ul>
